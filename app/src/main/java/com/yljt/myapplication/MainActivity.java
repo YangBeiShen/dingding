@@ -14,12 +14,12 @@ import android.os.Message;
 import android.os.PowerManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d("dingding","MainActivity我启动啦");
         System.out.print("MainActivity我启动啦");
+        Toast.makeText(getApplicationContext(),"MainActivity我启动啦",Toast.LENGTH_SHORT).show();
 
 
 //        dothing(getApplicationContext());
